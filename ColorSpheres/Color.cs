@@ -7,12 +7,12 @@ namespace ColorSpheres
 {
     public class Color
     {
-        private byte red;
+        private readonly byte red;
         
-        private byte green;
+        private readonly byte green;
         
-        private byte blue;
-        private byte alpha;
+        private readonly byte blue;
+        private readonly byte alpha;
 
         public Color(byte red, byte green, byte blue){
             this.red = red;
