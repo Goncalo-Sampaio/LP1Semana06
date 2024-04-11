@@ -2,8 +2,15 @@
 
 namespace ColorSpheres
 {
+    /// <summary>
+    /// Class that handles spheres and shows their status to the user
+    /// </summary>
     class Program
     {
+        /// <summary>
+        ///Main method of the program where we instantiate the necessary objects
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             //Instantiating colors and spheres
