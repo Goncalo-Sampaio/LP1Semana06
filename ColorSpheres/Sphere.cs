@@ -15,7 +15,7 @@ namespace ColorSpheres
         {
             this.color = color;
             this.radius = radius;
-            this.thrown = 0;
+            thrown = 0;
         }
 
         public void Pop()
@@ -31,6 +31,14 @@ namespace ColorSpheres
 
         public int GetTimesThrown(){
             return thrown;
+        }
+
+        public Color GetColor(){
+            return color;
+        }
+
+        public float GetRadius(){
+            return radius;
         }
     }
 }
