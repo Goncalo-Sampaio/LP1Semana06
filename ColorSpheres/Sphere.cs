@@ -11,10 +11,26 @@ namespace ColorSpheres
         private float radius;
         private int thrown;
 
-        public Sphere(Color color, float radius){
+        public Sphere(Color color, float radius)
+        {
             this.color = color;
             this.radius = radius;
             this.thrown = 0;
+        }
+
+        public void Pop()
+        {
+            radius = 0;
+        }
+
+        public void Throw(){
+            if (radius > 0){
+                thrown++;
+            }
+        }
+
+        public int GetTimesThrown(){
+            return thrown;
         }
     }
 }
