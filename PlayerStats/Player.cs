@@ -38,5 +38,19 @@ namespace PlayerStats
                 }
             }
         }
+
+        public Player(string name){
+            Name = name;
+            HighScore = 0;
+            wonGames = 0;
+            playedGames = 0;
+        }
+
+         public void PlayGame(bool win){
+            playedGames++;
+            if (win){
+                wonGames++;
+            }
+         }
     }
 }
