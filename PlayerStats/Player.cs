@@ -10,5 +10,14 @@ namespace PlayerStats
         private float highScore;
         private int playedGames;
         private int wonGames;
+
+        public float HighScore{
+            get => highScore;
+            set {
+                if (value > highScore){
+                    highScore = value;
+                }
+            }
+        }
     }
 }
