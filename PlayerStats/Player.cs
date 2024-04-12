@@ -10,6 +10,7 @@ namespace PlayerStats
         private float highScore;
         private int playedGames;
         private int wonGames;
+        public string Name{ get; }
 
         public float HighScore{
             get => highScore;
