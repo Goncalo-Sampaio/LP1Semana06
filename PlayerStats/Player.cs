@@ -24,17 +24,17 @@ namespace PlayerStats
             }
         }
 
-        public int WinRate
+        public float WinRate
         {
             get
             {
-                if (playedGames > 0)
+                if (playedGames == 0)
                 {
                     return 0;
                 }
                 else
                 {
-                    return wonGames / playedGames;
+                    return (float) wonGames / (float) playedGames;
                 }
             }
         }
